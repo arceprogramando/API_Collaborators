@@ -1,15 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ESNext", // Usar ESNext para soporte moderno
-    "module": "ESNext", // Utilizar ES Modules
-    "moduleResolution": "node", // Resolver módulos como Node.js
-    "outDir": "./dist", // Carpeta de salida para archivos compilados
-    "rootDir": "./src", // Carpeta raíz de los archivos fuente
-    "strict": true, // Activar chequeo estricto
-    "esModuleInterop": true, // Interoperabilidad con CommonJS
-    "skipLibCheck": true, // Saltar chequeo de archivos de librería
-    "forceConsistentCasingInFileNames": true // Consistencia en nombres de archivo
+    "target": "ESNext", // Compila el código a una versión moderna de JavaScript
+    "module": "ESNext", // Utiliza CommonJS para la compatibilidad con Node.js
+    "experimentalDecorators": true,// Permite la utilización de decoradores experimentales
+    "moduleResolution": "node", // Resolución de módulos compatible con Node.js
+    "outDir": "./dist", // Carpeta de salida donde se generarán los archivos compilados
+    "rootDir": "./src", // Carpeta de entrada de los archivos fuente
+    "strict": true, // Activa el modo estricto para una comprobación más exhaustiva de tipos
+    "esModuleInterop": true, // Permite la interoperabilidad entre módulos CommonJS y ESModules
+    "strictPropertyInitialization": true, // Asegura la inicialización de propiedades en los constructores
+    "skipLibCheck": true, // Evita la comprobación de tipos en las librerías, mejora el tiempo de compilación
+    "forceConsistentCasingInFileNames": true, // Asegura que los nombres de archivo sean consistentes
+    "resolveJsonModule": true, // Permite importar archivos JSON como módulos
+    "noImplicitAny": true, // Asegura que no se utilicen variables con tipo `any` implícito
+    "isolatedModules": true, // Asegura que cada archivo se pueda compilar independientemente
+    "declaration": true, // Genera archivos `.d.ts` (tipos) para la exportación de módulos
+    "skipDefaultLibCheck": true // Evita la comprobación de la biblioteca predeterminada para mejorar el tiempo de compilación
   },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+  "include": ["src"], // Archivos o directorios que se deben incluir en la compilación
+  "exclude": ["node_modules", "dist"] // Archivos o directorios que deben ser excluidos de la compilación
 }
