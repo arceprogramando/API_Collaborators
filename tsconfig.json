@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Usar ESNext para soporte moderno
+    "module": "ESNext", // Utilizar ES Modules
+    "moduleResolution": "node", // Resolver módulos como Node.js
+    "outDir": "./dist", // Carpeta de salida para archivos compilados
+    "rootDir": "./src", // Carpeta raíz de los archivos fuente
+    "strict": true, // Activar chequeo estricto
+    "esModuleInterop": true, // Interoperabilidad con CommonJS
+    "skipLibCheck": true, // Saltar chequeo de archivos de librería
+    "forceConsistentCasingInFileNames": true // Consistencia en nombres de archivo
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

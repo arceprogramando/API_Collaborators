@@ -1,3 +1,29 @@
-.vercel
-node_modules
-*env
+# Dependencias de Node.js
+node_modules/
+
+# Archivos y carpetas generados
+dist/
+build/
+*.log
+
+# Configuración de Vercel
+.vercel/
+
+# Archivos de entorno
+.env
+.env.*  # Para manejar múltiples entornos, como .env.production, .env.development
+
+# Cachés de sistemas operativos y herramientas
+.DS_Store         # macOS
+Thumbs.db         # Windows
+*.swp             # Archivos de swap de Vim
+.idea/            # Configuración de WebStorm/IntelliJ
+.vscode/          # Configuración de Visual Studio Code
+
+# Archivos de TypeScript
+*.tsbuildinfo     # Información de compilación incremental de TypeScript
+
+# Configuración de dependencias y CI/CD
+package-lock.json  # Opcional, si no quieres versionar el lockfile
+yarn.lock          # Opcional, si usas Yarn y no versionas el lockfile
+pnpm-lock.yaml     # Opcional, si usas pnpm y no versionas el lockfile
