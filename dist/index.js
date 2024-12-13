@@ -2,7 +2,11 @@ import express from 'express';
 import cors from 'cors';
 import { Octokit } from '@octokit/rest';
 function getEnvVariable(key) {
-    process.loadEnvFile();
+    if (typeof process.loadEnvFile === 'function') {
+      process.loadEnvFile();
+    } else {
+      console.error('El método loadEnvFile no existe en process.');
+    }
     const value = process.env[key];
     if (!value) {
         throw new Error(`Falta la variable de entorno requerida: ${key}`);
