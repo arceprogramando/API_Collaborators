@@ -1,1 +1,1 @@
-# Aplicación para consumir los colaboradores de UTN CURSO INGRESO
+# Aplicación para consumir los colaboradores de UTN CURSO INGRESO en grupo
